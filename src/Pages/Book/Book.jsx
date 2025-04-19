@@ -21,7 +21,7 @@ const Book = ({ book }) => {
                         </div>
                         <div className='space-x-2 ml-10'>
                             {
-                                tags.map((tag) => <button className='btn bg-base-300 rounded-r-2xl text-amber-700'>{tag}</button>)
+                                tags.map((tag) => <button key={tag} className='btn bg-base-300 rounded-r-2xl text-amber-700'>{tag}</button>)
                             }
                         </div>
                         <div className="card-body">
